@@ -1,6 +1,7 @@
 import os
 import pprint
 import shutil
+
 ######################## List of Outputs #############################
 list_of_files = []
 for filename in os.listdir():
@@ -12,7 +13,7 @@ for filename in os.listdir():
 def diferenciate_lists(list1,list2):
     return list(set(list1) - set(list2))
 
-#Defining a function to check doubles on normal_termination_list and delete them
+#Defining a function to check double occurrency of the same file on normal_termination_list and delete them
 def list_duplicates(seq):
   seen = set()
   seen_add = seen.add
